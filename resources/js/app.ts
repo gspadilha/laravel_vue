@@ -1,4 +1,4 @@
-import { DefineComponent, createApp, h } from 'vue';
+import { DefineComponent, createApp, h, devtools } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
 
 import MainLayout from './Layouts/MainLayout.vue';
