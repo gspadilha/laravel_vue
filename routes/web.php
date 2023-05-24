@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +11,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\IndexController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', [IndexController::class, 'index']);
+Route::get('/show', [IndexController::class, 'show']);
